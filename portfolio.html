@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priyanshu Kumar | AI/ML and Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4fb;--card:#ffffff;--line:#ddd6f0;--ink:#1b1533;--mute:#5d5680;--acc:#6d3df0;--hot:#d9421f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f0b24;--card:#181238;--line:#2c2358;--ink:#ece9fb;--mute:#a49fc9;--acc:#a78bfa;--hot:#ff8a6b}}
+:root[data-theme="dark"]{--bg:#0f0b24;--card:#181238;--line:#2c2358;--ink:#ece9fb;--mute:#a49fc9;--acc:#a78bfa;--hot:#ff8a6b}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));height:100%}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 'Hanken Grotesk',system-ui,sans-serif;overflow-x:hidden}
+a{color:var(--acc)}a:focus-visible,button:focus-visible{outline:2px solid var(--hot);outline-offset:3px}
+h1,h2,h3{font-family:'Familjen Grotesk',sans-serif;margin:0;line-height:1.05}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.nav b{font:700 1.1rem 'Familjen Grotesk',sans-serif}.nav div{display:flex;gap:20px}
+.nav a{color:var(--mute);text-decoration:none;font-size:.95rem}.nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 24px}
+.hero h1{font-size:clamp(2.8rem,9vw,6.2rem);font-weight:700;letter-spacing:-.035em}
+.hero h1 span{display:inline-block;animation:drop .7s cubic-bezier(.2,.8,.2,1) both}
+@keyframes drop{from{opacity:0;transform:translateY(40px) rotate(4deg)}}
+.sub{max-width:56ch;color:var(--mute);font-size:1.15rem;margin:18px 0 22px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:var(--acc);color:var(--bg);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px color-mix(in srgb,var(--acc) 45%,transparent)}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+.field{position:relative;height:340px;margin-top:34px;border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;touch-action:none;cursor:crosshair}
+.field canvas{width:100%;height:100%;display:block}
+.field p{position:absolute;left:16px;bottom:10px;margin:0;font-size:.88rem;color:var(--mute)}
+section{padding:72px 0 0}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:22px;letter-spacing:-.02em}
+.lead{max-width:64ch;color:var(--mute)}
+.facts{display:flex;gap:36px;flex-wrap:wrap;margin-top:26px}.facts b{display:block;font:700 2rem 'Familjen Grotesk',sans-serif;color:var(--hot)}.facts span{color:var(--mute);font-size:.92rem}
+.projects{display:grid;gap:22px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px;overflow:hidden}
+.card:before{content:'';position:absolute;inset:0;background:radial-gradient(360px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--acc) 22%,transparent),transparent 65%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover:before{opacity:1}
+.card>*{position:relative}
+.card h3{font-size:1.5rem;margin-bottom:6px}.card .k{color:var(--hot);font-weight:600;margin:0 0 14px}
+.card ul{margin:0 0 18px;padding-left:20px;color:var(--mute)}.card li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{border:1px solid var(--line);border-radius:99px;padding:2px 12px;font-size:.85rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.skills h3{font-size:1.1rem;margin-bottom:10px}
+.skills .chips span{cursor:default;transition:background .2s,color .2s,transform .2s}.skills .chips span:hover{background:var(--acc);color:var(--bg);transform:translateY(-2px)}
+.edu{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.edu li{position:relative;padding-bottom:20px}.edu li:before{content:'';position:absolute;left:-29px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--hot)}
+.edu b{display:block}.edu span{color:var(--mute)}
+.contact{padding-bottom:40px}.contact .big{display:block;font:700 clamp(1.5rem,5vw,3rem) 'Familjen Grotesk',sans-serif;color:var(--ink);text-decoration:none;word-break:break-all;transition:color .2s}
+.contact .big:hover{color:var(--acc)}
+footer{padding:30px 0 40px;color:var(--mute);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap"><b>Priyanshu Kumar</b><div><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></header>
+
+<main class="wrap">
+<div class="hero">
+  <h1 id="name" aria-label="Priyanshu Kumar"></h1>
+  <p class="sub">I build agentic AI systems, RAG pipelines and multimodal speech and vision apps. B.Tech student at NIT Srinagar.</p>
+  <div class="btns"><a class="btn" href="#projects">See my projects</a><a class="btn ghost" href="https://github.com/PRKS00" target="_blank" rel="noreferrer">GitHub profile</a></div>
+  <div class="field" id="field"><canvas id="cv" aria-hidden="true"></canvas><p>Your pointer is the query. The closest skills light up with a similarity score, like a vector search.</p></div>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p class="lead">AI/ML and software engineering student at NIT Srinagar with hands-on experience in agentic AI systems, RAG pipelines and multimodal speech and vision applications, using Python, LangChain, PyTorch, FastAPI and vector databases. I integrate LLMs and AI components into production-style applications.</p>
+  <div class="facts"><div><b>8.83</b><span>CGPA at NIT Srinagar</span></div><div><b>500+</b><span>LeetCode problems solved</span></div><div><b>70+</b><span>of them SQL-specific</span></div><div><b>A+</b><span>in Artificial Intelligence</span></div></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <article class="card">
+      <h3>MultiMind AI</h3><p class="k">Multimodal video understanding and RAG engine</p>
+      <ul><li>Modular pipeline combining speech (Whisper), vision (YOLOv8, BLIP) and text processing for unstructured video and audio.</li><li>Context layer with automated chunking and ChromaDB embeddings for RAG with timestamp-aware answers.</li><li>Lower inference latency through keyframe extraction that skips redundant computation.</li></ul>
+      <div class="chips"><span>Python</span><span>Whisper</span><span>YOLOv8</span><span>BLIP</span><span>ChromaDB</span><span>Streamlit</span></div>
+    </article>
+    <article class="card">
+      <h3>Resume Analyzer and Technical Interview Platform</h3><p class="k">Agentic interviewer powered by Gemini</p>
+      <ul><li>Agentic interview system that forces schema-compliant JSON output through structured constraints.</li><li>Deterministic state tracking adapts the interview across DSA, OOP, DBMS, OS and Computer Networks based on performance.</li><li>Semantic parsing turns unstructured resumes into structured, queryable data.</li></ul>
+      <div class="chips"><span>Python</span><span>LangChain</span><span>Gemini AI</span><span>NLP</span><span>Streamlit</span></div>
+    </article>
+    <article class="card">
+      <h3>Knowledge-Grounded Voice Agent</h3><p class="k">Traceable knowledge base for voice agents and RAG</p>
+      <ul><li>Converts mixed business content into a structured, searchable knowledge base.</li><li>Ingestion, semantic chunking, embedding and vector retrieval with LangChain and ChromaDB.</li><li>Streamlit interface shows grounded answers with their source, reducing unsupported responses.</li></ul>
+      <div class="chips"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Streamlit</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>AI-native and agentic</h3><div class="chips"><span>LangChain</span><span>Agentic orchestration</span><span>Context engineering</span><span>Prompt engineering</span><span>RAG</span></div></div>
+    <div><h3>Retrieval</h3><div class="chips"><span>ChromaDB</span><span>Pinecone</span><span>FAISS</span><span>Embeddings</span><span>Semantic search</span></div></div>
+    <div><h3>AI/ML</h3><div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>CNNs</span><span>Deep learning</span></div></div>
+    <div><h3>Speech and vision</h3><div class="chips"><span>Whisper</span><span>OpenCV</span><span>YOLOv8</span><span>BLIP</span><span>OCR</span></div></div>
+    <div><h3>LLM APIs</h3><div class="chips"><span>Gemini API</span><span>OpenAI API</span><span>HuggingFace</span><span>Structured output</span></div></div>
+    <div><h3>Languages and backend</h3><div class="chips"><span>Python</span><span>SQL</span><span>C++</span><span>C</span><span>FastAPI</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>MongoDB</span><span>JWT</span></div></div>
+    <div><h3>Core CS</h3><div class="chips"><span>DSA</span><span>OOP</span><span>DBMS</span><span>Operating systems</span></div></div>
+    <div><h3>Tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>Docker</span><span>Linux</span><span>Colab</span><span>Streamlit</span></div></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="edu">
+    <li><b>B.Tech, Electronics and Communication Engineering</b><span>NIT Srinagar, 2023 to 2027, CGPA 8.83/10</span></li>
+    <li><b>CBSE Class XII, 90.8%</b><span>Holy Mission Senior Secondary School, Patna, 2021 to 2023</span></li>
+    <li><b>CBSE Class X, 72.2%</b><span>Teresa International Academy, Patna, 2021</span></li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p class="lead">Open to AI/ML and software engineering roles and internships.</p>
+  <a class="big" href="mailto:priyanshu93549@gmail.com">priyanshu93549@gmail.com</a>
+  <p class="lead"><a href="tel:+917488948736">+91 74889 48736</a> · <a href="https://github.com/PRKS00" target="_blank" rel="noreferrer">github.com/PRKS00</a> · Chapra, Bihar</p>
+</section>
+</main>
+<footer class="wrap">© Priyanshu Kumar</footer>
+
+<script>
+// Hero name: letters drop in one by one
+const nm=document.getElementById('name');
+'Priyanshu Kumar'.split('').forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch===' '?'\u00a0':ch;s.style.animationDelay=(i*45)+'ms';s.setAttribute('aria-hidden','true');nm.appendChild(s)});
+
+// Card spotlight follows pointer
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}));
+
+// Vector-search field: pointer = query, nearest skills light up
+(()=>{
+const box=document.getElementById('field'),cv=document.getElementById('cv'),g=cv.getContext('2d');
+const words=['RAG','LangChain','Whisper','YOLOv8','BLIP','ChromaDB','FAISS','Pinecone','PyTorch','TensorFlow','OpenCV','FastAPI','Gemini','OpenAI','Embeddings','Agents','Prompting','OCR','CNNs','SQL','Python','C++','Docker','Linux','Node.js','MongoDB','Streamlit','DSA'];
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let W,H,dpr=devicePixelRatio||1,q={x:0,y:0,on:false},t=0;
+const pts=words.map((w,i)=>({w,x:Math.random(),y:Math.random(),vx:(Math.random()-.5)*.0004,vy:(Math.random()-.5)*.0004}));
+const fit=()=>{W=cv.width=box.clientWidth*dpr;H=cv.height=box.clientHeight*dpr};fit();addEventListener('resize',fit);
+box.addEventListener('pointermove',e=>{const r=box.getBoundingClientRect();q.x=(e.clientX-r.left)*dpr;q.y=(e.clientY-r.top)*dpr;q.on=true});
+box.addEventListener('pointerleave',()=>q.on=false);
+const col=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function draw(){
+  t+=.012;const acc=col('--acc'),hot=col('--hot'),mute=col('--mute');
+  if(!q.on){q.x=W*(.5+.35*Math.sin(t));q.y=H*(.5+.3*Math.sin(t*1.7))}
+  g.clearRect(0,0,W,H);g.font=`${13*dpr}px 'Hanken Grotesk',sans-serif`;g.textAlign='center';
+  pts.forEach(p=>{if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<.05||p.x>.95)p.vx*=-1;if(p.y<.08||p.y>.85)p.vy*=-1}p.px=p.x*W;p.py=p.y*H;p.d=Math.hypot(p.px-q.x,p.py-q.y)});
+  const top=[...pts].sort((a,b)=>a.d-b.d).slice(0,4),maxD=Math.hypot(W,H)*.45;
+  pts.forEach(p=>{g.globalAlpha=top.includes(p)?1:.45;g.fillStyle=top.includes(p)?hot:mute;g.beginPath();g.arc(p.px,p.py,(top.includes(p)?5:3)*dpr,0,7);g.fill();g.fillText(p.w,p.px,p.py-10*dpr)});
+  g.globalAlpha=1;g.lineWidth=1.5*dpr;
+  top.forEach(p=>{const s=Math.max(0,1-p.d/maxD);g.strokeStyle=acc;g.globalAlpha=.3+.7*s;g.beginPath();g.moveTo(q.x,q.y);g.lineTo(p.px,p.py);g.stroke();g.globalAlpha=1;g.fillStyle=acc;g.fillText(s.toFixed(2),(p.px+q.x)/2,(p.py+q.y)/2)});
+  g.fillStyle=acc;g.beginPath();g.arc(q.x,q.y,7*dpr,0,7);g.fill();
+  requestAnimationFrame(draw)}
+draw();
+})();
+</script>
+</body>
+</html>
